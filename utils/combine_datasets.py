@@ -1,23 +1,31 @@
-from colour.plotting import *
-import colour
-import matplotlib.pyplot as plt
 import pandas as pd
-import csv
-import os
+
+# from colour.plotting import *
 
 # df1 = pd.read_csv('C:/Users/kvriz/Desktop/Polybot_ECPs/datasets/electrochromics_literature_only.csv')
-df1 = pd.read_csv('C:/Users/kvriz/Desktop/Polybot_ECPs/datasets/electrochromics_in_house_experiments.csv')
+df1 = pd.read_csv(
+    'C:/Users/kvriz/Desktop/Polybot_ECPs/datasets/electrochromics_in_house_experiments.csv'
+)
 
-df2 = pd.read_csv('C:/Users/kvriz/Desktop/Polybot_ECPs/datasets/absorption_spectra/all_abs_spectra_corrected.csv')
+df2 = pd.read_csv(
+    'C:/Users/kvriz/Desktop/Polybot_ECPs/datasets/absorption_spectra/all_abs_spectra_corrected.csv'
+)
 # print(df1.polymer_id.values)
 # print(len(df1.polymer_id.values))
 # Merging datasets on 'Citation' and 'Polymer Id'
-merged_data = pd.merge(df1, df2[['source', 'polymer_id', 'wavelength', 'intensity']], on=['source', 'polymer_id'], how='inner')
+merged_data = pd.merge(
+    df1,
+    df2[['source', 'polymer_id', 'wavelength', 'intensity']],
+    on=['source', 'polymer_id'],
+    how='inner',
+)
 # print(merged_data)
 # merged_data.to_csv('literature_only_dataset_with_abs.csv', index=None)
-merged_data.to_csv('electrochromics_in_house_experiments_with_abs.csv', index=None)
-# merged_data = pd.merge(df1, df2[['source', 'polymer_id', 'wavelength', 'intensity']], on=['source', 'polymer_id'], 
-#                        how='outer', 
+merged_data.to_csv(
+    'electrochromics_in_house_experiments_with_abs.csv', index=None
+)
+# merged_data = pd.merge(df1, df2[['source', 'polymer_id', 'wavelength', 'intensity']], on=['source', 'polymer_id'],
+#                        how='outer',
 #                        indicator=True)
 
 # Filter the merged data to find rows that only exist in one of the datasets

@@ -1,22 +1,26 @@
 # The decimerai code should be install from this repo: https://github.com/Kohulan/DECIMER-Image-Segmentation
-from DECIMER import predict_SMILES
-from rdkit.Chem import rdDepictor
-from rdkit.Chem.Draw import rdMolDraw2D
-from rdkit import Chem
-from IPython.display import SVG
-from decimer_segmentation import *
-from decimer_segmentation import segment_chemical_structures, segment_chemical_structures_from_file, get_mrcnn_results, complete_structure_mask, visualize
-import cv2
-import numpy as np
+import math
 from copy import deepcopy
 from itertools import cycle
-from multiprocessing import Pool
-from typing import List, Tuple
-from PIL import Image
-from matplotlib import pyplot as plt
-import math
+
+import cv2
 import easyocr
+import numpy as np
 import pandas as pd
+from DECIMER import predict_SMILES
+
+# from decimer_segmentation import *
+from decimer_segmentation import get_mrcnn_results, visualize
+from IPython.display import SVG
+from matplotlib import pyplot as plt
+from PIL import Image
+from rdkit import Chem
+from rdkit.Chem import rdDepictor
+from rdkit.Chem.Draw import rdMolDraw2D
+
+# from multiprocessing import Pool
+# from typing import List, Tuple
+
 
 def get_masked_image(image: np.array, mask: np.array) -> np.array:
     """
@@ -46,6 +50,7 @@ def get_masked_image(image: np.array, mask: np.array) -> np.array:
     masked_image = masked_image.convert("RGB")
     return np.array(masked_image), bbox
 
+
 def apply_mask(image: np.array, mask: np.array) -> np.array:
     """
     This function takes an image and a mask for this image (shape: (h, w))
@@ -66,7 +71,9 @@ def apply_mask(image: np.array, mask: np.array) -> np.array:
     masked_image, bbox = get_masked_image(deepcopy(image), mask)
     x, y, w, h = bbox
     im_gray = cv2.cvtColor(masked_image, cv2.COLOR_RGB2GRAY)
-    _, im_bw = cv2.threshold(im_gray, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+    _, im_bw = cv2.threshold(
+        im_gray, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU
+    )
     # Removal of transparent layer and generation of segment
     _, alpha = cv2.threshold(im_bw, 0, 255, cv2.THRESH_BINARY)
     b, g, r = cv2.split(image)
@@ -107,54 +114,69 @@ def structure_image_segment(image_path):
     segments, bboxes = apply_masks(page, masks)
     return segments, bboxes, page
 
+
 def visualize_structure_boxes(segments, bboxes, page, name_boxes=None):
 
     decimer_ai_boxes = []
     for box in bboxes[:]:
         y, x, k, l = box
-        h=k-y
-        w=l-x
+        h = k - y
+        w = l - x
         decimer_coords = x, y, w, h
         decimer_ai_boxes.append(decimer_coords)
-        cv2.rectangle(page, (x, y), (x + w, y + h), (250, 0, 50), 2)  # green box, 2 pixels thick
+        cv2.rectangle(
+            page, (x, y), (x + w, y + h), (250, 0, 50), 2
+        )  # green box, 2 pixels thick
 
         # Load the image
-        #image = cv2.imread('/content/images_large_ma-2018-01789f_0001.jpeg')
+        # image = cv2.imread('/content/images_large_ma-2018-01789f_0001.jpeg')
         # Define the transparency factor.
         alpha = 0.4  # Transparency factor (between 0 and 1; 0 is fully transparent, 1 is fully opaque)
 
         # Define the light yellow color in BGR
         light_yellow = (50, 250, 250)
 
-   
-    if name_boxes !=None:
+    if name_boxes is not None:
         ocr_boxes = []
         for box in name_boxes:
-                x = box[0][0]
-                y = box[0][1]
-                w = box[1][0] - x
-                h = box[2][1] - y
-                ocr_coords = x, y, w, h
-                ocr_boxes.append(ocr_coords)
-                # Create a fully opaque rectangle on the overlay
-                overlay = page.copy()
+            x = box[0][0]
+            y = box[0][1]
+            w = box[1][0] - x
+            h = box[2][1] - y
+            ocr_coords = x, y, w, h
+            ocr_boxes.append(ocr_coords)
+            # Create a fully opaque rectangle on the overlay
+            overlay = page.copy()
 
-                cv2.rectangle(overlay, (x, y), (x + w, y + h), light_yellow, cv2.FILLED)
+            cv2.rectangle(
+                overlay, (x, y), (x + w, y + h), light_yellow, cv2.FILLED
+            )
 
-                # Blend the overlay with the original image
-                cv2.addWeighted(overlay, alpha, page, 1 - alpha, 0, page)
+            # Blend the overlay with the original image
+            cv2.addWeighted(overlay, alpha, page, 1 - alpha, 0, page)
 
-                # Draw the rectangle border in a different color, e.g., light blue (optional)
-                cv2.rectangle(page, (x, y), (x + w, y + h), (255, 255, 100), 2)
+            # Draw the rectangle border in a different color, e.g., light blue (optional)
+            cv2.rectangle(page, (x, y), (x + w, y + h), (255, 255, 100), 2)
 
     # Display the image with the detected boxes
     return page, decimer_ai_boxes, ocr_boxes
 
 
 def ocrc_polymer_names(image_path):
-    polymer_markers = ['Ph', 'ProDOT', 'DAT', 'EDOT', 'DOT', 'DMP', 'DMOT', 'ECP', 'P', 'AcDOT']
+    polymer_markers = [
+        'Ph',
+        'ProDOT',
+        'DAT',
+        'EDOT',
+        'DOT',
+        'DMP',
+        'DMOT',
+        'ECP',
+        'P',
+        'AcDOT',
+    ]
     reader = easyocr.Reader(['en'])
-    ocr_result = reader.readtext(image_path) 
+    ocr_result = reader.readtext(image_path)
 
     # Collect polymer names along with their coordinates and confidence levels
     polymer_info = []
@@ -163,19 +185,20 @@ def ocrc_polymer_names(image_path):
             polymer_info.append(result)
 
     # Print polymer names with their coordinates and confidence levels
-    all_info =[]
+    all_info = []
     for info in polymer_info:
         print(info)
         all_info.append(info)
     name_boxes = [res[0] for res in all_info]
     polymer_info = [res[1] for res in all_info]
-    return name_boxes, polymer_info 
+    return name_boxes, polymer_info
 
 
 def box_center(box):
     x = box[0] + box[2] / 2
     y = box[1] + box[3] / 2
     return (x, y)
+
 
 def match_boxes(box_list1, box_list2):
     # Prepare the list to hold the indices of matching boxes
@@ -190,7 +213,9 @@ def match_boxes(box_list1, box_list2):
             center2 = box_center(box2)
 
             # Calculate Euclidean distance
-            distance = math.sqrt((center1[0] - center2[0])**2 + (center1[1] - center2[1])**2)
+            distance = math.sqrt(
+                (center1[0] - center2[0]) ** 2 + (center1[1] - center2[1]) ** 2
+            )
 
             if distance < min_distance:
                 min_distance = distance
@@ -205,58 +230,64 @@ def get_smiles_from_image_segment(image_path):
     SMILES = predict_SMILES(image_path)
     return SMILES
 
+
 def spatial_matching():
     pass
 
 
-def moltosvg(mol,molSize=(450,150),kekulize=True):
+def moltosvg(mol, molSize=(450, 150), kekulize=True):
     mc = Chem.Mol(mol.ToBinary())
     if kekulize:
         try:
             Chem.Kekulize(mc)
-        except:
+        except Exception:
             mc = Chem.Mol(mol.ToBinary())
     if not mc.GetNumConformers():
         rdDepictor.Compute2DCoords(mc)
-    drawer = rdMolDraw2D.MolDraw2DSVG(molSize[0],molSize[1])
+    drawer = rdMolDraw2D.MolDraw2DSVG(molSize[0], molSize[1])
     drawer.DrawMolecule(mc)
     drawer.FinishDrawing()
     svg = drawer.GetDrawingText()
     return svg
 
+
 def render_svg(svg):
     # It seems that the svg renderer used doesn't quite hit the spec.
     # Here are some fixes to make it work in the notebook, although I think
     # the underlying issue needs to be resolved at the generation step
-    return SVG(svg.replace('svg:',''))
+    return SVG(svg.replace('svg:', ''))
 
 
 image_path = "conjugated_ECPs/uv_vis_automated/Macromol., 49, 6350-6359, 2016/molecular_structure/images_large_ma-2016-01114e_0010.jpeg"
 
 segments, bboxes, page = structure_image_segment(image_path)
 
-name_boxes, polymer_info  = ocrc_polymer_names(image_path)
+name_boxes, polymer_info = ocrc_polymer_names(image_path)
 
-modified_page, decimer_ai_boxes, ocr_boxes = visualize_structure_boxes(segments, bboxes, page, name_boxes)
+modified_page, decimer_ai_boxes, ocr_boxes = visualize_structure_boxes(
+    segments, bboxes, page, name_boxes
+)
 matched_indices = match_boxes(ocr_boxes, decimer_ai_boxes)
-save_path = "C:\Users\kvriz\co-polymer-set-transformer"
+save_path = r"C:\Users\kvriz\co-polymer-set-transformer"
 print('matched_indices', matched_indices)
 smiles_list = []
 polymer_name = []
 for i, index in enumerate(matched_indices):
     name = polymer_info[i]
-    print(f"Polymer {name}")# matches with molecular image box {decimer_ai_boxes[index]}")
+    print(
+        f"Polymer {name}"
+    )  # matches with molecular image box {decimer_ai_boxes[index]}")
     polymer_name.append(name)
     image_array = segments[index]
     image = Image.fromarray(image_array)
     image_path1 = f"{save_path}/{name}.png"
     image.save(image_path1)
-    smiles=get_smiles_from_image_segment(image_path1)
+    smiles = get_smiles_from_image_segment(image_path1)
     smiles = smiles.replace('R1', '*')
-    smiles = smiles.replace('R', '*')    
-    smiles=smiles.split('.')[0]
+    smiles = smiles.replace('R', '*')
+    smiles = smiles.split('.')[0]
     smiles_list.append(smiles)
-    #image.show()
+    # image.show()
 
 df = pd.DataFrame(data={'polymer_name': polymer_name, 'smiles': smiles_list})
 df.to_csv(f"{save_path}/polymer_smiles.csv")
