@@ -2,5 +2,12 @@
 /checkpoints/
 # /utils/
 /backup_pages/
-/*__pycache__/
+
+# Python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter notebook
+.ipynb_checkpoints
 /notebooks/image_mining/Plot2Spec_materials_eyes/checkpoints
