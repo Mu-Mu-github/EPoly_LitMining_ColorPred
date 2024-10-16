@@ -18,15 +18,15 @@ python -m pip install -r requirements.txt
 
 ## Demo 1: Literature Mining workflow
 
-Large language model (LLM) assisted extraction of chemical information. See ```demo1.ipynb```.
+Large language model (LLM) assisted extraction of chemical information. See [```demo1.ipynb```](demo1.ipynb).
 
-<img src="docs/demo1.png" >
+[<img src="docs/demo1.png">](demo1.ipynb)
 
 ## Demo 2: ECPs color prediction webapp
 
 A transformer model for predicting CIELab and Absorption spectra of ECPs. Visit <https://polybot-ecps.streamlit.app/>.
 
-<img src="docs/demo2.png" >
+[<img src="docs/demo2.png">](https://polybot-ecps.streamlit.app/)
 
 ## Other Demostrations
 
