@@ -12,14 +12,10 @@ import torch
 from scipy.signal import savgol_filter
 from sklearn.preprocessing import MinMaxScaler
 
-from copolymer_set_transformer.copolymer_set_transformer import (
-    CoPolymerSetTransformer,
-)
+from models.copolymer_set_transformer import CoPolymerSetTransformer
 
-# from copolymer_set_transformer.ml_modules import *
-from copolymer_set_transformer.monomer_representations import (
-    get_train_data_representation_dft,
-)
+# from models.ml_modules import *
+from models.monomer_representations import get_train_data_representation_dft
 
 
 def apply_savgol_filter(y, window_size, poly_order):

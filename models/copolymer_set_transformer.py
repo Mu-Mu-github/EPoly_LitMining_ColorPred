@@ -6,7 +6,7 @@ import tqdm
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
 
-from copolymer_set_transformer.ml_modules import PMA, SAB
+from models.ml_modules import PMA, SAB
 
 device = 'cpu'
 
