@@ -1,33 +1,39 @@
-# Co-polymer Set Transformer
-A transformer model designed for enabling CIELab and Absorption spectra prediction for electrochromic polymers (ECPs)
-<img src="toc.png" >
+# EPoly_LitMining_ColorPred
 
+Demos and supporting data for literature mining and color prediction of electrochromic polymers (ECPs) to enable autonomous experimentation.
 
 # Installation
+
 We recommend installing the package by following the instructions below.
-```
-conda create --name polybot_ecps_env python=3.12.2
-conda activate polybot_ecps_env
-git clone https://github.com/lrcfmd/Co-Polymer-SetTransformer.git
-cd Co-Polymer-SetTransformer
-pip install -r requirements.txt
-```
 
-Or cloning the environment from the polybot_ecps_env.yaml file
 ```
-conda create --name myclone --clone polybot_ecps_env.yml
+conda create --name env-ecp python=3.12
+conda activate env-ecp
+git clone https://github.com/polybot-nexus/EPoly_LitMining_ColorPred.git
+cd EPoly_LitMining_ColorPred
+python -m pip install -r requirements.txt
 ```
 
-The use of the Abs decoder is optionnal
+# Demostrations
 
+## Demo 1: Literature Mining workflow
 
-The input dataset should have the following format:
+Large language model (LLM) assisted extraction of chemical information. See ```demo1.ipynb```.
 
-smiles1 | percentage_1 | smiles2 |  percentage_2 | smiles3 | percentage_3 | L | a | b | wavelength | intensity 
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- 
-c1sc(*)c2OCC(COCCCCCCCC)(COCCCCCCCC)COc12  | 0.5 | *c4ccc(c2ccc(c1ccc(*)s1)c3nsnc23)s4 | 0.3 | *c1ccc(*)c2nsnc12 | 0.2 | 80 | 60 | 30 | 350, 351,...,800 | 0.01,0.012,...,0.20 
+<img src="docs/demo1.png" >
 
-The two last columns, i.e., wavelength and intensity can be omitted if only the first decoder for CIELab prediction is used.
+## Demo 2: ECPs color prediction webapp
+
+A transformer model for predicting CIELab and Absorption spectra of ECPs. Visit <https://polybot-ecps.streamlit.app/>.
+
+<img src="docs/demo2.png" >
+
+## Other Demostrations
+
+- ```notebooks/1_ECPs_database_analysis.ipynb``` Plotting the statistics on our database and analysing the trends.
+- ```notebooks/2_model_comparison.ipynb``` Comparison of several models on literature data.
+- ```notebooks/3_sequential_learning.ipynb``` Model performance on in-house data and finetune it on new data
+- ```notebooks/4_physical_insights.ipynb``` After having a full operational model we try to extract feature importances
 
 # Train your own models based on the prefered monomer representation
 
@@ -48,10 +54,3 @@ Example
     python train.py --training_data "datasets/electrochromics_in_house_experiments_with_abs.csv" --save_dir checkpoints -n_epochs 10 -lr 0.01 --dropout_ratio 0.15
 
 
-# Notebooks
-- ```1_ECPs_database_analysis.ipynb``` Plotting the statistics on our database and analysing the trends.
-- ```2_model_comparison.ipynb``` Comparison of several models on literature data.
-- ```3_sequential_learning.ipynb``` Model performance on in-house data and finetune it on new data
-- ```4_physical_insights.ipynb``` After having a full operational model we try to extract feature importances
-- ```5_LLM_asssistants_contition_extraction_demo.ipynb``` We used the best performing fine-tuned model to guide the autonomous experiment
-- ```image mining folder``` Contains a notebook demonstrating the process for applying the abs spectra digitalization and the code for molecular structure image segmentation
