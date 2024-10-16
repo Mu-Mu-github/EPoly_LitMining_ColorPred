@@ -1,0 +1,91 @@
+Abstract
+
+
+In the context of the fast-growing demand for innovative high-performance display technologies, the perspective of manufacturing low-cost functional materials that can be easily processed over large areas or finely printed into individual pixels, while being mechanically deformable, has motivated the development of novel electronically active organic components fulfilling the requirements for flexible displays and portable applications. Among all technologies relying on a low-power stimulated optical change, non-emissive organic electrochromic devices (ECDs) offer the advantage of being operational under a wide range of viewing angles and lighting conditions spanning direct sunlight as desired for various applications including signage, information tags and electronic paper. Combining mechanical flexibility, high contrast ratios and fast response times, along with colour tunability through structural control, polymeric electrochromes constitute the most attractive organic electronics for tomorrow’s reflective/transmissive ECDs and displays1,2,3. Although red, blue4 and most recently green5,6,7,8,9,10 electrochromic polymers (ECPs) required for additive primary colour space were investigated, attempts to make saturated black ECPs have not been reported, probably owing to the complexity of designing materials absorbing effectively over the whole visible spectrum. Here, we report on the use of the donor–acceptor approach to make the first neutral-state black polymeric electrochrome. Processable black-to-transmissive ECPs promise to affect the development of both reflective and transmissive ECDs by providing lower fabrication and processing costs through printing, spraying and coating methods, along with good scalability when compared with their traditional inorganic counterparts1,11,12.
+
+
+
+
+
+You have full access to this article via your institution.
+
+Download PDF
+
+
+
+
+
+Main
+
+
+Defined as an optical change operating in a material on electron transfer (redox), or by application of an external bias, the phenomenon of electrochromism was first observed by Deb in the transition-metal oxide WO3 in 1969 (ref. 13). Featuring high photochemical stability and switching reversibly from a transparent to an intense blue colour through electrochemically induced intervalence charge-transfer optical transitions, cathodically colouring WO3 has become the material of choice for electrochromic windows14,15. Since then, numerous other metal oxides have been studied in the context of ‘black to colourless’ switching electrochromics including oxides of molybdenum (MoO3), iridium (Ir(OH)3) and nickel (NiOx) (ref. 12). In addition to being inherently brittle, metal oxides often exhibit long switching times of multiple seconds to minutes along with low colouration efficiencies and contrast ratios12. Alternatively, by exhibiting higher contrasts, a variety of colours and the capability to perform on flexible substrates, organic electrochromics are now being applied to numerous applications including smart windows and mirrors1,16, switchable displays17 and electrochromic inks18,19. In parallel, they could possibly meet the growing demand for optical modulators and shutters in message-laser communications and optical data storage12.
+
+Of the organic electrochromes, electroactive conducting polymers show relatively facile synthetic access, environmental stability and solution processability. By controlling the repeat-unit structure, a range of colours spanning the full visible spectrum can be attained1. For instance, polyaniline can attain a transmissive yellow-to-black switch, although it is unstable to repeated switching20, hence the necessity for new polymer design.
+
+In spite of significant effort in the field of polymer-based solar cells towards developing materials absorbing homogeneously over a broad bandwidth of the ultraviolet–visible spectrum21,22,23,24,25,26,27,28,29, the ability to design strongly absorbing electrochromic polymers (ECPs) that can be switched to a highly transmissive state has remained a challenge owing to the extra requirement for simultaneous and efficient electrochemical bleaching of all absorption bands over the visible region.
+
+In fully π-conjugated organic polymers, as the oxidation level is progressively increased, charged carriers balanced with counter ions are created along the backbone that have long-wavelength optical absorptions. For a sufficiently low energy-gap polymer, as oxidative (p-type) doping generates the formation of radical cations (polarons) and further dications (bipolarons), the absorption can be transferred into the near-infrared region with depletion of the ground-state π–π* transition in the visible region. The ability of the backbone to assume a stable quinoidal geometry, as well as the position of the bipolaronic transition relative to the visible region, governs the transmissivity of the fully oxidized state.
+
+While investigating the use of the donor–acceptor approach in designing novel donor–acceptor ECPs exhibiting a two-band absorption in the visible so as to reflect and/or transmit colours commonly difficult to achieve such as saturated greens, we discovered that low- and high-energy transitions could be controlled in a substantial and interconnected fashion by varying the relative contribution of electron-rich and -poor moieties incorporated in the repeat unit. This structural modification enabled us to balance both short- and long-wavelength absorption bands as the acceptor core is first increasingly substituted with donor substituents and subsequently polymerized. In addition, a ‘merging’ of the bands is observed that offers the potential for the synthesis of neutral-state coloured materials possessing either highly saturated or darker colours. Theoretical work addressing the relevance of the donor–acceptor approach for designing organic metals shows that systems involving two or more distinct optical transitions can be rationalized by considering the presence of low-lying unoccupied and localized energy levels within the bandgap of the ground-state conjugated structure30,31.
+
+On the basis of these empirical considerations, a copolymer possessing an absorption spectrum extended over the entire visible region (400–700 nm) was synthesized and its redox properties investigated. We found that the copolymer achieves reversible electrochromic switching from a strong opaque neutral black to a highly transmissive oxidized state over a potential window of less than 1 V, a desirable parameter for low-voltage device applications.
+
+Here, we report on the synthesis and polymerization of a series of donor–acceptor oligomers differing by the ratio of electron-rich to electron-deficient substituents incorporated, which demonstrates the rationale for ‘merging’ of the short- and long-wavelength optical transitions; full synthetic details are reported in the Supplementary Information. The soluble oligomeric analogues M1, M2 and M3 were synthesized by symmetrical and repeated substitution of the donor 3,4-bis(2-ethylhexyloxy)thiophene (DOT-(OEtHx)2) onto the acceptor core 2,1,3-benzothiadiazole (BTD) (ref. 32); the molecular structures of M1, M2 and M3 are shown in Fig. 1a; absorption spectra are reported in Supplementary Information, Fig. S1. The oligomers were then subsequently polymerized affording P1, P2 and P3, the optical properties of which were investigated as a function of the length of the donor-based conjugated chromophores (2 m) spacing BTD along the backbones; the molecular structures of P1, P2 and P3 are shown in Fig. 1a. As shown in Fig. 1b, diminishing the concentration of the electron-poor heterocycle along the conjugated backbone (increasing the length of the oligo-thienylene electron-rich block) gives a simultaneous bathochromic shift of the high-energy transition and hypsochromic shift of the low-energy transition with both peaks tending towards the λmax of the P4 control homopolymer, resulting in the ‘merging’ of the two transitions. At the same time, the relative intensities of the low- and high-energy peaks evolve towards balancing each other. Hence, P3 exhibits a broad absorption spectrum almost entirely covering the visible region with the exception of a dark-red portion between 625 and 700 nm and the blue–green gap located at 450–550 nm; the colours of P1 to P4 in toluene solution are shown in Fig. 1c. We attribute the dark wine hue of P3 to its overall high visible absorbance with minimal red-light transmission. This observation led us to replace the DOT moiety with the strongly donating 2-ethylhexyloxy-substituted 3,4-propylenedioxythiophene (ProDOT-(CH2OEtHx)2), which possesses a higher highest occupied molecular orbital and should substantially narrow the bandgap of its subsequent polymer without the need to exchange BTD for a stronger acceptor; the molecular structures of M5, M6, M7, P5, P6 and P7 are shown in Fig. 2a; absorption spectra of the oligomers are reported in Supplementary Information, Fig. S2.
+
+Figure 1: Visible absorption of P1, P2, P3 and P4.
+
+a, Molecular structure of M1, M2, M3, M4, P1, P2, P3 and control polymer P4. b, Solution optical absorbance spectra of polymers P1, P2, P3 and control polymer P4 in toluene (spectrum of each system is normalized at the longer wavelength absorption maximum). The legend specifies the values of the respective absorption maxima for both high- and low-energy transitions. c, The colours obtained on polymerization of each system.
+
+
+
+
+
+Full size image
+
+
+
+Figure 2: Visible absorption of P5, P6, P7 and P8.
+
+a, Molecular structure of M5, M6, M7, M8, P5, P6, P7 and control polymer P8. b, Solution optical absorbance spectra of polymers P5, P6, P7 and control polymer P8 in toluene (spectrum of each system is normalized at the longer wavelength absorption maximum). The legend specifies the values of the respective absorption maxima for both high- and low-energy transitions. c, The colours obtained on polymerization of each system.
+
+
+
+
+
+Full size image
+
+
+
+Figure 2b shows that similar absorption changes and ‘merging’ of both optical transitions take place on increasing the length of the oligo-ProDOT electron-rich block. In particular, the polymers are now all strongly absorbing at 650 nm, thus covering the targeted red portion of the visible region. In the case of P7, the higher energy transition undergoes a more extensive redshift than the DOT-based P3, thus opening a blue transmission in the 400–450 nm region and does not balance the lowest energy transition as effectively as in P3; the hues of P5, P6 and P7 in toluene solution are shown in Fig. 2c.
+
+As a method to overcome the persistent lack of coverage in the blue and green regions of the visible region, we reasoned that by copolymerizing M5 and M8 (monomer of the subsequent control polymer P8) in a random fashion but in an appropriate feed ratio, the resulting hybrid would exhibit the extensive absorption from 400 to 700 nm required for a black chromophore. This is indeed the case and an optimal ratio was found to be one equivalent of M5 to four equivalents of M8, as illustrated in Fig. 3a and corresponding to that of the repeat unit composing the well-defined analogue P7 in terms of electron-rich to -poor substituents incorporated. The molecular composition of the resulting polymer P9 was confirmed by NMR and elemental analysis; see Supplementary Information, Table S1. A number-average molecular weight of 13.6 kDa and a polydispersity of 2 were estimated by gel permeation chromatography; see Supplementary Information, Table S1. In toluene solution, P9 exhibits an intense ink-like dark-blue colour and shows no significant optical change on increase of the temperature between room temperature and 100 ∘C, indicating neither major aggregation of the backbone, nor disruption of effective conjugation.
+
+Figure 3: Spectroelectrochemistry of polymer P9.
+
+a, Molecular structure of copolymer P9. b, Spectroelectrochemistry of polymer P9 with its respective bandgap as estimated from the onset of absorption. The film was spray-cast onto ITO-coated glass from solution (4 mg ml−1) in toluene (absorption maximum=1.13 a.u.). The applied potential was increased in 25 mV steps: +0.04 V⇒+0.74 V. c, The colours of P9 obtained on electrochemical switching both in the neutral state (left) and on full oxidation (right).
+
+
+
+
+
+Full size image
+
+
+
+A film of P9 (absorption maximum=1.13 a.u.) was spray-cast onto indium tin oxide (ITO)-coated glass at room temperature from toluene (4 mg ml−1), and redox cycled until a stable and reproducible electrochromic switch was reached. Electrochemical oxidation of the film was carried out in 0.1 M LiBF4/propylene carbonate supporting electrolyte using a silver wire as a quasi-reference electrode (calibrated against Fc/Fc+) and a platinum wire as the counter electrode. As shown in Fig. 3b, when the potential applied to the film is increased from −0.09 V, simultaneous bleaching of the full set of visible absorption bands is observed. This onset of oxidation is consistent with the low value estimated at −0.08 V through cyclic and differential-pulse voltammetry; see Supplementary Information, Figs S3, S4. As the visible absorption bands are depleted, polaronic and bipolaronic transitions progressively arise in the near-infrared region as expected for a coloured-to-transmissive ECP. Determined from the onset of absorption of the solid thin film, the bandgap of the polymer was estimated at 1.64 eV. Considering the absorption maximum at 592 nm as a reference, a transmittance change of 51.5% is measured on electro-oxidation, indicative of the high degree of electrochromic contrast observed. As shown in Fig. 3c, the spray-deposited thin film of P9 (absorption maximum=1.13 a.u.) is deep black in its neutral state and attains a remarkably high level of transparency to the human eye when fully doped; outstanding stability on long-term switching (10,000 cycles) is reported in Supplementary Information, Fig. S5.
+
+Considering this transparency, the colourimetrically determined relative luminance change of P9, estimating the brightness of the transmitted light as a percentage of the brightness of the light source calibrated to the sensitivity of the human eye, was measured as a function of film thickness (absorption maximum=1.05, 1.13 and 2.59 a.u.) and doping level induced by electrochemical oxidation, as shown in Fig. 4a. The polymer exhibits an excellent relative luminance change varying from 52% for the thinnest to 40% for the thickest deposited film, indicating how these values can be modulated and optimized as a function of thickness as desired for a specific application (high colour density versus high transparency). P9 completes its full switch in a potential window of less than 0.8 V and exhibits L* values (ranging from 0 to 100) in the range 72–85 on oxidation, demonstrative of its aptitude to nearly reach the ‘white point’ of colour space33. Although the residual blue hue of the neutral state characterized by the negative b* values also reported in Fig. 4a is not readily perceived by the human eye at the considered film thicknesses, we are currently optimizing the choice of the monomers, the feed ratios to be used in the copolymerizations as well as investigating well-defined analogues that enable us to prepare an even more fully black ECP. The response time of the same broadly absorbing polymer P9 sprayed onto ITO (absorption maximum estimated at 0.9 a.u.) was characterized throughout a series of square-wave potential stepping electrochromic switching experiments in a LiBF4/propylene carbonate solution electrolyte as described in Fig. 4b. By monitoring the transmittance of the spray-cast film as a function of time at both the shorter (428 nm) and longer (636 nm) wavelength absorption maxima for potential steps ranging from 10 to 1.5 s, contrast ratios (ΔT, where T is the optical transmittance of the film at a given wavelength) as high as 35% (428 nm) and 40% (636 nm) were observed. Although a variation of electrochromic contrast of about 9% was observed as the switch time was progressively decreased to 1.5 s, it is likely that subsecond switching times will be attained on optimization of the switching conditions (nature of the electrochemical device, identity and size of the ionic species constituting the electrolyte, quality/thickness of the spray-cast film and so on).
+
+Figure 4: Electrochromic performance of P9.
+
+a, Relative luminance as a function of applied potential and film thickness for spray-coated P9. The legend indicates the absorbance of the deposited films (estimated at the absorption maximum) and gives an indication of the thickness obtained on spraying. For colour matching, L*a*b* values (in the sense of the Commission Internationale de l’Eclairage 1976 L*a*b* colour model) of fully neutral and oxidized states are reported for the films. b, Square-wave potential step absorptometry of P9 spray-coated on ITO and monitored at 636 nm (left) and 428 nm (right) in 0.1 M LiBF4/PC solution, −0.6 V to +0.7 V versus Fc/Fc+. Switch times (ν): 10 s step for 40 s (two cycles), 5 s step for 30 s (three cycles), 2 s step for 20 s (five cycles), then 1.75 s step for 20 s and 1.5 s step for 20 s from left to right.
+
+
+
+
+
+Full size image
+
+
+
+Starting with the donor–acceptor theory introduced in 1993 by Havinga et al. 34, our simple approach towards making easily oxidized conjugated polymers with broad and homogeneous absorption bandwidths extending over the entire visible spectrum that can be fully bleached has implications that span numerous applications including electrochromic windows and displays. The solution processability of all of the polymers prepared is important when considering ultimate use relative to the often studied electropolymerized systems35. Finally, the ‘band-merging’ effect outlined above affects other potential uses, such as the development of solution-processable and narrow-bandgap precursors absorbing throughout the visible region and into the near-infrared region for organic polymer solar cells36,37.
