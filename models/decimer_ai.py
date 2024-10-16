@@ -117,9 +117,6 @@ def visualize_structure_boxes(segments, bboxes, page, name_boxes=None):
         decimer_ai_boxes.append(decimer_coords)
         cv2.rectangle(page, (x, y), (x + w, y + h), (250, 0, 50), 2)  # green box, 2 pixels thick
 
-        # Load the image
-        #image = cv2.imread('/content/images_large_ma-2018-01789f_0001.jpeg')
-        # Define the transparency factor.
         alpha = 0.4  # Transparency factor (between 0 and 1; 0 is fully transparent, 1 is fully opaque)
 
         # Define the light yellow color in BGR
@@ -228,37 +225,3 @@ def render_svg(svg):
     # Here are some fixes to make it work in the notebook, although I think
     # the underlying issue needs to be resolved at the generation step
     return SVG(svg.replace('svg:',''))
-
-
-
-image_path = "monomer_structure_example/images_large_ma-2016-01763s_0008.jpeg"
-save_path =  "monomer_structure_example"
-segments, bboxes, page = structure_image_segment(image_path)
-
-name_boxes, polymer_info  = ocrc_polymer_names(image_path)
-
-modified_page, decimer_ai_boxes, ocr_boxes = visualize_structure_boxes(segments, bboxes, page, name_boxes)
-matched_indices = match_boxes(ocr_boxes, decimer_ai_boxes)
-print('matched_indices', matched_indices)
-smiles_list = []
-polymer_name = []
-for i, index in enumerate(matched_indices):
-    name = polymer_info[i]
-    print(f"Polymer {name}")# matches with molecular image box {decimer_ai_boxes[index]}")
-    polymer_name.append(name)
-    image_array = segments[index]
-    image = Image.fromarray(image_array)
-    image_path1 = f"{save_path}/{name}.png"
-    image.save(image_path1)
-    smiles=get_smiles_from_image_segment(image_path1)
-    smiles = smiles.replace('R1', '*')
-    smiles = smiles.replace('R', '*')    
-    smiles=smiles.split('.')[0]
-    smiles_list.append(smiles)
-    #image.show()
-
-df = pd.DataFrame(data={'polymer_name': polymer_name, 'smiles': smiles_list})
-df.to_csv(f"{save_path}/polymer_smiles.csv")
-plt.imshow(cv2.cvtColor(modified_page, cv2.COLOR_BGR2RGB))
-plt.savefig(f"{save_path}/images_with_boxes.png", dpi=600)
-plt.show()
