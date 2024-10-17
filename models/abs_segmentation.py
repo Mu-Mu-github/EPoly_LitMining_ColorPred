@@ -282,14 +282,8 @@ def check_img(i, paletted):
           x_bis, y_bis = derivative(*derivative(x1, y1))
           print('curvature',  np.mean(x_bis) )
           if np.mean(x_bis)>200:
-            #print(x1.min())
-            #plt.scatter(x1 , y1)
-            f = interp1d(x1, y1, fill_value="extrapolate")  #fill_value="extrapolate"
+            f = interp1d(x1, y1, fill_value="extrapolate")
 
-            #wavelength = np.arange(450, 650,1)
-            #try:
-            #  plt.scatter(wavelength , f(wavelength))
-            #except:
             wavelength = np.arange(x1.min(), x1.max(),1)  #
             plt.gca().invert_yaxis()
             plt.scatter(wavelength+50 , f(wavelength))

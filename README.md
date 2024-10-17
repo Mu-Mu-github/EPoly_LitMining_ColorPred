@@ -29,28 +29,15 @@ A transformer model for predicting CIELab and Absorption spectra of ECPs. Visit 
 [<img src="docs/demo2.png">](https://polybot-ecps.streamlit.app/)
 
 ## Other Demostrations
-
-- ```notebooks/1_ECPs_database_analysis.ipynb``` Plotting the statistics on our database and analysing the trends.
-- ```notebooks/2_model_comparison.ipynb``` Comparison of several models on literature data.
-- ```notebooks/3_sequential_learning.ipynb``` Model performance on in-house data and finetune it on new data
-- ```notebooks/4_physical_insights.ipynb``` After having a full operational model we try to extract feature importances
+- [```database_analysis.ipynb```](database_analysis.ipynb) Plotting the statistics on our database and analysing the trends.
+- [```model_comparison.ipynb```](model_comparison.ipynb) Comparison of several models on literature data.
 
 # Train your own models based on the prefered monomer representation
 
-    python train.py --model <model> --training_data <data> --save_dir <save_dir> -n_epochs <epochs> -lr <learning_rate> --abs_prediction
+To train your own models you can refer to the co-polymer-set-transformer repository: 
 
-- `model` The molecular embeddings to use. Choose among:
-    - morgan
-    - dft
-    - mordred
-- `training_data` The location of the .csv file containing the molecular pairs for training
-- `save_dir` The directory to save the trained model 
-- `n_epochs` The number of epochs to use for training    
-- `lr` Learning rate
-- `use_abs_decoder` Set is to `True` to request absorption spectra prediction 
+https://github.com/polybot-nexus/co-polymer-set-transformer
 
-Example
 
-    python train.py --training_data "datasets/electrochromics_in_house_experiments_with_abs.csv" --save_dir checkpoints -n_epochs 10 -lr 0.01 --dropout_ratio 0.15
 
 
