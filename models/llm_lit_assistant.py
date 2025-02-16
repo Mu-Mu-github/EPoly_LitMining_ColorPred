@@ -141,8 +141,8 @@ def extract_chemical_statistics(df, client, model, retry=3):
         "element, e.g., THF and dry THF are the same elemement and should "
         "belong to the same category. Another example FeCl3 and iron (III) "
         "cloride is the same element and should belong to the same category. "
-        "Also Pd(OAc)2 and palladium (II) acetate. Also remove from the list "
-        "any toxic solvent such as cloroform, hexane."
+        "Also Pd(OAc)2 and palladium (II) acetate. Remove from the list "
+        "any toxic solvent such as cloroform, hexane and do not could any solvent used for precipitation, like MeOH."
     )
 
     response_msgs = []
