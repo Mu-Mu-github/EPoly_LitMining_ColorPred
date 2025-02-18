@@ -7,7 +7,7 @@ Demos and supporting data for literature mining and color prediction of electroc
 We recommend installing the package by following the instructions below.
 
 ```
-conda create --name env-ecp python=3.12
+conda create --name env-ecp python=3.11
 conda activate env-ecp
 git clone https://github.com/polybot-nexus/EPoly_LitMining_ColorPred.git
 cd EPoly_LitMining_ColorPred
