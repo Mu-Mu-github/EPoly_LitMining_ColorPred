@@ -7,10 +7,13 @@ torchvision==0.15.*
 tensorflow==2.12.*
 transformers==4.39.*
 huggingface-hub==0.22.*
-Pillow==10.0.*
 opencv-python==4.8.*
 langchain==0.2.*
 fastapi==0.111.*
 requests==2.31.*
 matplotlib==3.8.*
 jupyter==1.0.*
+Cython==3.0.12
+openai
+DECIMER
+rdkit
