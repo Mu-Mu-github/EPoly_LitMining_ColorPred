@@ -101,14 +101,15 @@ def extract_chemical_elements(df, client, model, retry=3):
         user_prompt = (
             "This is a paragraph related to polymers synthesis.\n\n"
             f"Context:\n{paragraph}"
-            "Your task is to identify all the chemical elements used in the "
-            "polymerization reaction only. Then generate an HTML version of "
-            "the input text, marking up specific entities related to "
-            "chemical elements. The specific elements that need to be "
-            "identified are the following: base, solvents, ligands, and "
-            "catalysts. Use HTML <span> tags to highlight these entities. "
-            "Each <span> should have a class attribute indicating the type "
-            "of the entity."
+            "Your task is to identify all the chemical elements used in the " \
+            "polymerization reaction only. Then generate an HTML version of " \
+            "the input text, marking up specific entities related to " \
+            "chemical elements. The specific elements that need to be " \
+            "identified are the following: base, solvents, ligands, and " \
+            "catalysts. Use HTML <span> tags to highlight these entities. " \
+            "Each <span> should have a class attribute indicating the type " \
+            "of the entity. " \
+            "Do not count any solvents used for post-reaction processing and for precipitation."
         )
 
         answer_str = llm_chat(client, model, system_prompt, user_prompt, retry)
@@ -141,9 +142,7 @@ def extract_chemical_statistics(df, client, model, retry=3):
         "element, e.g., THF and dry THF are the same elemement and should "
         "belong to the same category. Another example FeCl3 and iron (III) "
         "cloride is the same element and should belong to the same category. "
-        "Also Pd(OAc)2 and palladium (II) acetate. Remove from the list "
-        "any toxic solvent such as cloroform, hexane and do not could any solvent used for precipitation, like MeOH."
-    )
+        "Also Pd(OAc)2 and palladium (II) acetate.")
 
     response_msgs = []
     answer_str = llm_chat(

@@ -1,0 +1,466 @@
+Letter
+pubs.acs.org/macroletters
+
+Synthesis of Thiophene- and Bithiophene-Based Alternating
+Copolymers via Pd-Catalyzed Direct C−H Arylation
+Yohei Fujinami,† Junpei Kuwabara,† Wei Lu,† Hideki Hayashi,‡ and Takaki Kanbara*,†
+†
+
+Tsukuba Research Center for Interdisciplinary Materials Science (TIMS), Graduate School of Pure and Applied Sciences, University
+of Tsukuba, 1-1-1 Tennodai, Tsukuba 305-8573, Japan
+‡
+Nagoya Municipal Industrial Research Institute, 3-4-41, Rokuban, Atsuta-ku, Nagoya 456-0058, Japan
+
+Downloaded via ARGONNE NATL LABORATORY on February 27, 2024 at 04:05:26 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+S Supporting Information
+*
+
+ABSTRACT: Polycondensation via direct C−H arylation of
+thiophene derivatives gave thiophene- and bithiophene-based
+alternating copolymers in good yields. The optimization of the
+reaction conditions was investigated in terms of a catalytic system
+and reaction time. Under optimized conditions, the polycondensation reaction of 3,3′,4,4′-tetramethylbithiophene with 2,7-dibromo9,9-dioctylfluorene gave poly[2,7-(9,9-dioctylfluorene)-alt-5,5′-(3,3′,4,4′-tetramethyl-2,2′-bithiophene)] with a molecular weight
+of 31 800 in 91% yield. The polycondensation reaction proceeded with 2 mol % of Pd(OAc)2 without the addition of a
+phosphine ligand in a short reaction time (3 h). Six kinds of π-conjugated polymers were synthesized by the polycondensation
+reaction without the use of bifunctional organometallic reagents as monomers.
+ecause of their unique optical and electrical properties, πconjugated polymers are considered to be promising
+materials, and they have been widely applied to optoelectronic
+devices such as organic thin-film solar cells, light emitting
+diodes, field effect transistors, and electrochromic devices.1−5
+Conventionally, many π-conjugated polymers are synthesized
+by polycondensation using transition metal catalyzed crosscoupling reactions such as the Suzuki−Miyaura coupling and
+the Migita−Kosugi−Stille coupling.1−6 However, these methods require the prior preparation of bifunctional organometallic
+reagents as monomers, and the polycondensation reaction
+often produces a stoichiometric amount of toxic byproduct
+such as organostannyl compounds.
+In recent years, catalytic dehydrohalogenative cross-coupling
+reactions of nonpreactivated arenes or heteroarenes with aryl
+halides, so-called direct arylation, have been actively investigated.7,8 This protocol should be advantageous for the
+synthesis of π-conjugated polymers with respect to decreasing
+the number of reaction steps and reducing undesired waste
+from the organometallic reagents. We previously reported the
+polycondensation of 1,2,4,5-tetrafluorobenzene with 2,7dibromo-9,9-dioctylfluorene based on Pd-catalyzed direct
+arylation.9 We thus envisioned the extension of this method
+to the synthesis of thiophene- and bithiophene-based
+alternating copolymers because thiophene and bithiophene
+are popular choices as monomer units for alternating πconjugated copolymers, and these units provide various
+excellent semiconducting polymers for optoelectronic devices.3−5 For example, poly(9,9-dioctylfluorene-alt-bithiophene),
+so-called F8T2, exhibits high performance when used for
+manufacturing organic field-effect transistors.10,11 This current
+work is thus expected to bring significant benefits to the
+synthesis of materials for optoelectronic devices. Recently,
+
+B
+
+© 2011 American Chemical Society
+
+Ozawa and co-workers successfully synthesized poly(3hexylthiophene) with high molecular weight and high
+regioregularity via direct arylation of 2-bromo-3-hexylthiophene.12,13 However, polycondensation of thiophene derivatives with dihalogenated aromatic monomers has not been
+achieved. Herein, we report on a novel and efficient method for
+synthesis of thiophene- and bithiophene-based alternating
+copolymers via direct arylation.
+Alternating copolymers containing bithiophene and fluorene
+units were selected as the first synthetic target of this
+methodology because polymers such as F8T2 are widely used
+as high-performance materials. Although C−H bonds at the α
+position in thiophene derivatives are most active for direct
+arylation reactions, some side reactions also occur at the β
+position.7,8 To simplify the assessment of the possible
+usefulness of this methodology and determine optimized
+conditions, 3,3′,4,4′-tetramethylbithiophene was used as a
+monomer to avoid the side reactions at the β position in the
+bithiophene unit. The polycondensation reactions of 3,3′,4,4′tetramethylbithiophene with 2,7-dibromo-9,9-dioctylfluorene
+were carried out at 100 °C in the presence of Pd(OAc)2 (2
+mol %), a phosphine ligand (4 mol %), pivalic acid (30 mol %),
+and K2CO3 (2.5 equiv) in dimethylacetamide (DMAc)
+(Scheme 1). Under the experimental conditions, poly[2,7(9,9-dioctylfluorene)-alt-5,5′-(3,3′,4,4′-tetramethyl-2,2′-bithiophene)] (polymer 1) was obtained without the use of
+organometallic reagents as monomers.
+To determine the appropriate conditions, polycondensation
+reactions were carried out under various conditions. Table 1
+Received: September 14, 2011
+Accepted: October 7, 2011
+Published: November 15, 2011
+67
+
+dx.doi.org/10.1021/mz200067s | ACS Macro Lett. 2012, 1, 67−70
+
+ACS Macro Letters
+
+Letter
+
+system with phosphine ligands. Hartwig and co-workers also
+reported a faster reaction of direct arylation under phosphinefree conditions than that with a phosphine ligand.22 This
+phosphine-free system is valuable from the viewpoint that there
+is no need to remove phosphine compounds from the
+polymers. The removal of phosphine compounds was problematic because decomposed phosphine compounds are occasionally incorporated into the main chains of conjugated polymers
+during polycondensation.23,24 Under the optimized conditions
+(entry 6), this polycondensation reaction gave a high molecular
+weight polymer within 3 h, which was superior to conventional
+polycondensation via cross-coupling reactions in terms of the
+reaction time. For example, syntheses of F8T2 by polycondensation via the Suzuki−Miyaura25,26 and the Migita−
+Kosugi−Stille27 cross-coupling reactions required long reaction
+times of more than 48 h.
+The structure of polymer 1 was identified by NMR
+spectroscopy and elemental analysis. Figure 1 shows the 1H
+
+Scheme 1. Polycondensation of 3,3′,4,4′-Tetramethylbithiophene and 2,7-Dibromo-9,9-dioctylfluorene
+
+Table 1. Polycondensation of 3,3′,4,4′-Tetramethylbithiophene and 2,7-Dibromo-9,9-dioctylfluorenea
+entry
+
+ligand
+
+time
+
+Mnb
+
+Mw/Mnb
+
+DPc
+
+yield (%)d
+
+1
+2
+3
+4
+5
+6
+7e
+
+PCy3·HBF4
+PtBu3·HBF4
+PtBu2Me·HBF4
+none
+PCy3·HBF4
+none
+none
+
+24 h
+24 h
+24 h
+24 h
+3h
+3h
+3h
+
+36100
+
+2.76
+
+59
+
+35400
+16000
+31800
+4000
+
+5.30
+1.80
+2.46
+2.12
+
+58
+26
+52
+6
+
+82
+0
+0
+87
+64
+91
+72
+
+Reactions were carried out at 100 °C using Pd(OAc)2 (2 mol %),
+ligand (4 mol %), pivalic acid (30 mol %), and K2CO3 (2.5 equiv) in
+DMAc (1.67 mL). bEstimated by gel permeation chromatography
+(GPC) calibrated on polystyrene standards. cThe average degree of
+polymerization was calculated from GPC data and the molecular
+weight of the repeating unit. dThe products were obtained by
+reprecipitation from CHCl3/MeOH. eWithout pivalic acid.
+a
+
+Figure 1. 1H NMR spectrum of polymer 1 (400 MHz, in CDCl3).
+
+summarizes the results of the polycondensation reactions.
+Because PCy3·HBF4 was reported as an effective ligand for Pdcatalyzed direct arylation of thiophene derivatives,14,15 the
+catalytic system of Pd(OAc)2 with PCy3·HBF4 was examined
+first. The catalytic system using PCy3·HBF4 gave polymer 1
+with high molecular weight in good yield (entry 1). In contrast,
+the catalytic system with PtBu3·HBF4 or PtBu2Me·HBF4 did not
+promote the polycondensation reaction (entries 2 and 3),
+although P t Bu 2 Me·HBF 4 was the best ligand for the
+polycondensation of 1,2,4,5-tetrafluorobenzene with 2,7dibromo-9,9-dioctylfluorene.9 Because several phosphine-free
+catalytic systems promoted direct arylation reactions of
+thiophene derivatives,16−18 the catalytic system without the
+addition of a phosphine ligand was examined in this
+polycondensation reaction. As expected, a high molecular
+weight polymer was obtained in high yield under the
+phosphine-free conditions (entry 4). To clarify the difference
+of catalytic activity, the polycondensation reactions with short
+reaction times were carried out in the presence or absence of
+PCy3·HBF4. The reaction using PCy3·HBF4 gave polymer 1
+with a moderate molecular weight (16 000) and yield (64%,
+entry 5). Alternatively, the reaction without a phosphine ligand
+yielded better polycondensation results in terms of molecular
+weight (31 800) and yield (91%) of the polymer (entry 6).
+Because the polycondensation reaction in the absence of pivalic
+acid gave only oligomeric products (entry 7), the direct
+arylation reaction under phosphine-free conditions was likely to
+proceed via a metalation−deprotonation pathway.19−21 These
+results demonstrated that the phosphine-free system in the
+presence of pivalic acid was more active than the catalytic
+
+NMR spectrum of polymer 1. All signals could be assigned to
+the protons in the repeating unit, and no signal of the terminal
+unit was observed in the spectrum. These results were
+consistent with the high molecular weight of the polymer. No
+signal of the branching structure was detected; this indicates
+that a negligible direct arylation reaction occurred at the
+aromatic C−H bonds in the fluorene units.
+When 2,2′-bithiophene was used as a monomer in
+polycondensation with 2,7-dibromo-9,9-dioctylfluorene, insoluble products were obtained under the same conditions as in
+entry 6. The low solubility was presumably due to the crosslinked structure of the polymer. This result indicated that
+reactions of direct arylation occurred not only at the α position
+of bithiophene but also at the β position. To evaluate the
+undesired side reaction, a model reaction of 2,2′-bithiophene
+and 2 equiv of 1-bromo-4-methylbenzene was examined under
+the same conditions as the polycondensation reaction (Scheme
+2). In addition to 5,5′-bis(4-methylphenyl)-2,2′-bithiophene,
+the formation of a trace amount of trisubstituted bithiophene as
+a mixture of regioisomers was confirmed by mass spectrometry
+(see the Supporting Information). Although the reaction at the
+β position was minor, the minor reaction probably induced the
+formation of the cross-linked structure.
+3,4-Dimethylthiophene could be polymerized with 2,7dibromo-9,9-dioctylfluorene under the optimized conditions
+(Scheme 3). In 3 h, the reaction gave poly[2,7-(9,9dioctylfluorene)-alt-2,5-(3,4-dimethylthiophene)] (polymer 2)
+with the molecular weight of 10 700 in 78% yield. In view of the
+molecular weight, the reactivity of 3,3′,4,4′-tetramethylbithio68
+
+dx.doi.org/10.1021/mz200067s | ACS Macro Lett. 2012, 1, 67−70
+
+ACS Macro Letters
+
+Letter
+
+Scheme 2. Model Reaction of 2,2′-Bithiophene and 1-Bromo-4-methylbenzene
+
+Scheme 3. Polycondensation of 3,4-Dimethylthiophene and
+2,7-Dibromo-9,9-dioctylfluorene
+
+Table 2. Polycondensation Using Various DibromoAromatic Compoundsa
+entry
+
+polymer
+
+Mnb
+
+Mw/Mnb
+
+DPc
+
+yield (%)d
+
+1
+2
+3
+4
+
+polymer 3
+polymer 4
+polymer 5
+polymer 6
+
+7300
+32900
+19200
+13500
+
+2.13
+5.36
+2.90
+1.95
+
+11
+52
+29
+26
+
+81
+47
+88
+65
+
+Reactions were carried out for 3 h at 100 °C using Pd(OAc)2 (2 mol
+%), pivalic acid (30 mol %), and K2CO3 (2.5 equiv) in DMAc (1.67
+mL). bEstimated by GPC calibrated on polystyrene standards. cThe
+average degree of polymerization were calculated from GPC data and
+molecular weight of the repeating unit. dThe products were obtained
+by reprecipitation from CHCl3/MeOH.
+a
+
+phene was higher than that of 3,4-dimethylthiophene. The
+higher reactivity of 3,3′,4,4′-tetramethylbithiophene is attributed
+to the fact that its π-conjugated system is larger than that of 3,4dimethylthiophene.28
+Various dibromo-aromatic compounds were examined as
+monomers of polycondensation with 3,3′,4,4′-tetramethylbithiophene owing to the high reactivity (Scheme 4). The results
+of the polymerizations are summarized in Table 2. The reaction
+of 3,6-dibromo-N-octadecylcarbazole as a monomer proceeded
+to give polymer 3 in 81% yield (entry 1). On the other hand,
+the reaction of 2,7-dibromo-N-octadecylcarbazole afforded
+polymer 4 in low yield (47%), even though the molecular
+weight was as high as 32 900 (entry 2). The low yield was due
+to the formation of insoluble products, indicating the presence
+of cross-linking structures. The large polydispersity (Mw/Mn >
+5) of the soluble part was consistent with the predicted crosslinking structures. Because high reactivity of the C−H bonds at
+the 3 and 6 positions in carbazole derivatives for direct arylation
+was reported,29 the reactions at these C−H bonds were likely
+to form the cross-linking structures. The polycondensation
+
+reaction of 2,8-dibromo-10,10-dioctyl-N-methylphenazasiline30
+gave the corresponding polymer (polymer 5) in moderate yield.
+Therefore, one can choose the compound as a monomer for
+the polycondensation reaction. Although 1,4-dibromo-2,5dioctylbenzene possesses steric hindrance of the octyl groups
+at the ortho-position of the Br groups, the polycondensation
+reaction with 3,3′,4,4′-tetramethylbithiophene proceeded
+smoothly to yield the soluble polymer without a branching or
+cross-linking structure.
+In summary, a novel and efficient method for the syntheses
+of thiophene- and bithiophene-based alternating copolymers via
+direct arylation was developed to successfully obtain six kinds of
+π-conjugated polymers. In addition to the benefit of reducing
+waste from organometallic reagents, the polycondensation
+reaction proceeded with a reduced amount of Pd catalysts (2
+mol %) in a short reaction time (3 h) compared to
+conventional polycondensation based on cross-coupling
+reactions. The phosphine-free catalytic system can contribute
+to obtaining pure π-conjugated polymers because there are no
+
+Scheme 4. Polycondensation of 3,3′,4,4′-Tetramethylbithiophene and Various Dibromo-Aromatic Compounds
+
+69
+
+dx.doi.org/10.1021/mz200067s | ACS Macro Lett. 2012, 1, 67−70
+
+ACS Macro Letters
+
+Letter
+
+(13) Recently, Mori et al. reported C−H functionalization
+polycondensation of chlorothiophene derivatives using magnesium
+amide for a deprotonation. Tamba, S.; Shono, K.; Suige, A.; Mori, A. J.
+Am. Chem. Soc. 2011, 133, 9700−9703.
+(14) Liégault, B.; Lapointe, D.; Caron, L.; Vlassova, A.; Fagnou, K. J.
+Org. Chem. 2009, 74, 1826−1834.
+(15) Lapointe, D.; Markiewicz, T.; Whipp, C. J.; Toderian, A.;
+Fagnou, K. J. Org. Chem. 2011, 76, 749−759.
+(16) Požgan, F.; Roger, J.; Doucet, H. ChemSusChem 2008, 1, 404−
+407.
+(17) Roger, J.; Požgan, F.; Doucet, H. Green Chem. 2009, 11, 425−
+432.
+(18) Roger, J.; Požgan, F.; Doucet, H. Adv. Synth. Catal. 2010, 352,
+696−710.
+(19) Gorelsky, S. I.; Lapointe, D.; Fagnou, K. J. Am. Chem. Soc. 2008,
+130, 10848−10849.
+(20) Lapointe, D.; Fagnou, K. Chem. Lett. 2010, 39, 1118−1126.
+(21) Ackermann, L. Chem. Rev. 2011, 111, 1315−1345.
+(22) Tan, Y.; Hartwig, J. F. J. Am. Chem. Soc. 2011, 133, 3308−3311.
+(23) Goodson, F. E.; Wallow, T. I.; Novak, B. M. Macromolecules
+1998, 31, 2047−2056.
+(24) Goodson, F. E.; Hauck, S. I.; Hartwig, J. F. J. Am. Chem. Soc.
+1999, 121, 7527−7539.
+(25) Ranger, M.; Leclerc, M. Can. J. Chem. 1998, 76, 1571−1577.
+(26) Liu, B.; Yu, W.-L.; Lai, Y.-H.; Huang, W. Macromolecules 2000,
+33, 8945−8952.
+(27) Nehls, B. S.; Asawapirom, U.; Füldner, S.; Preis, E.; Farrell, T.;
+Scherf, U. Adv. Funct. Mater. 2004, 14, 352−356.
+(28) Schipper, D. J.; Fagnou, K. Chem. Mater. 2011, 23, 1594−1600.
+(29) Do, H.-Q.; Daugulis, O. J. Am. Chem. Soc. 2011, 133, 13577−
+13586.
+(30) Hayashi, H.; Nakao, H.; Onozawa, S.-Y.; Adachi, A.; Hayashi,
+T.; Okita, K. Polym. J. 2003, 35, 704−710.
+
+residual phosphine compounds. Further studies including the
+expansion of the application range of this synthetic method and
+improvement of the selectivity of reacting C−H bonds are in
+progress.
+
+■
+
+EXPERIMENTAL METHODS
+
+A mixture of Pd(OAc)2 (2.2 mg, 0.010 mmol), pivalic acid (0.017 mL,
+0.15 mmol), K2CO3 (173 mg, 1.3 mmol), 2,7-dibromo-9,9dioctylfluorene (274 mg, 0.5 mmol), and 3,3′,4,4′-tetramethylbithiophene (111 mg, 0.5 mmol) was stirred in anhydrous dimethylacetamide (1.67 mL) for 3 h at 100 °C under nitrogen atmosphere. After
+cooling to room temperature, the mixture was poured into an aqueous
+solution of ethylenediaminetetraacetic acid disodium salt (pH = 8).
+The suspension was stirred overnight at room temperature. The
+precipitate was separated by filtration and washed with 0.1 M HCl
+solution, distilled water, MeOH, and hexane. The precipitate was
+dissolved in CHCl3, and the solution was filtered through a plug of
+Celite to remove insoluble material. A reprecipitation from CHCl3/
+MeOH gave polymer 1 as a pale yellow solid in 91% yield. Mn = 31
+800, Mw/Mn = 2.46. 1H NMR (400 MHz, CDCl3): δ 0.75 (br, 4H),
+0.81 (t, J = 7.6 Hz, 6H), 1.02−1.31 (br, 20H), 2.02 (br, 4H), 2.20 (s,
+6H), 2.32 (s, 6H), 7.47 (m, 4H), 7.75 (d, J = 7.6 Hz, 2H). 13C{1H}
+NMR (100 MHz, CDCl3) δ 151.3, 139.9, 138.8, 137.4, 133.6, 133.4,
+128.3, 128.1, 123.7, 119.7, 55.2, 40.3, 31.8, 30.0, 29.2, 29.2, 23.9, 22.6,
+14.5, 14.3, 14.1. Anal. Calcd. for H(C41H52S2)52Br: C, 80.66; H, 8.59.
+Found: C, 80.23; H, 8.39.
+
+■
+
+ASSOCIATED CONTENT
+S Supporting Information
+*
+Experimental procedures and spectroscopic data. This material
+is available free of charge via the Internet at http://pubs.acs.org.
+
+■
+
+AUTHOR INFORMATION
+Corresponding Author
+*E-mail: kanbara@ims.tsukuba.ac.jp.
+Notes
+The authors declare no competing financial interest.
+
+■
+
+ACKNOWLEDGMENTS
+The authors thank the Chemical Analysis Center of the
+University of Tsukuba for the measurements of NMR and
+MALDI-TOF-MS. This work was supported by the Collaborative Research Program of the Institute for Chemical Research,
+Kyoto University.
+
+■
+
+REFERENCES
+
+(1) Yamamoto, T. Macromol. Rapid Commun. 2002, 23, 583−606.
+(2) Bernius, M. T.; Inbasekaran, M.; O'Brien, J.; Wu, W. Adv. Mater.
+2000, 12, 1737−1750.
+(3) Roncali, J. Macromol. Rapid Commun. 2007, 28, 1761−1775.
+(4) Günes, S.; Neugebauer, H.; Sariciftci, N. S. Chem. Rev. 2007, 107,
+1324−1338.
+(5) Boudreault, P.-L. T.; Najari, A.; Leclerc, M. Chem. Mater. 2011,
+23, 456−469.
+(6) Yamamoto, T. Bull. Chem. Soc. Jpn. 2010, 83, 431−455.
+(7) Ackermann, L.; Vicente, R.; Kapdi, A. R. Angew. Chem., Int. Ed.
+2009, 48, 9792−9826.
+(8) Bellina, F.; Rossi, R. Tetrahedron 2009, 65, 10269−10310.
+(9) Lu, W.; Kuwabara, J.; Kanbara, T. Macromolecules 2011, 44,
+1252−1255.
+(10) Sirringhaus, H.; Kawase, T.; Friend, R. H.; Shimoda, T.;
+Inbasekaran, M.; Wu, W.; Woo, E. P. Science 2000, 290, 2123−2126.
+(11) Stutzmann, N.; Friend, R. H.; Sirringhaus, H. Science 2003, 299,
+1881−1884.
+(12) Wang, Q.; Takita, R.; Kikuzaki, Y.; Ozawa, F. J. Am. Chem. Soc.
+2010, 132, 11420−11421.
+70
+
+dx.doi.org/10.1021/mz200067s | ACS Macro Lett. 2012, 1, 67−70
+
+
