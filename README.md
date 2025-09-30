@@ -12,6 +12,15 @@ conda activate env-ecp
 git clone https://github.com/polybot-nexus/EPoly_LitMining_ColorPred.git
 cd EPoly_LitMining_ColorPred
 python -m pip install -r requirements.txt
+
+# Optional packages (install separately if needed):
+# For chemical structure recognition:
+pip install rdkit
+# For optical character recognition:
+pip install easyocr
+# For DECIMER (chemical structure recognition):
+# Note: DECIMER has TensorFlow version conflicts, install with care
+# pip install DECIMER decimer-segmentation
 ```
 
 # Demostrations
